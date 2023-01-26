@@ -2,15 +2,27 @@
 
 Unity Version 2021.3.6f1
 
+---
+## How to run  
+Clone the repository
+
+### Starting the Server  
+cd into SimServer directory  
+npm install  
+node server.js  
+
+### Starting the Unity Simulation
+Open up the project in Unity  
+Open up one of the scenes in the Final Scenes folder  
+Press run
+
+---
+
 ## ROS Format for LiDAR
 
 You can find some info about the format for the LiDAR senson here. It assumes a planar setup for now
 
 [http://docs.ros.org/en/lunar/api/sensor_msgs/html/msg/LaserScan.html](http://docs.ros.org/en/lunar/api/sensor_msgs/html/msg/LaserScan.html)
-
-## Source for procedural gen
-
-[https://gamedevacademy.org/complete-guide-to-procedural-level-generation-in-unity-part-1/](https://gamedevacademy.org/complete-guide-to-procedural-level-generation-in-unity-part-1/)
 
 ## About the communication protocol
 
