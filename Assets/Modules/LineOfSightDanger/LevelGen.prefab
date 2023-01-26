@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4978644679145271672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4978644679145271675}
+  - component: {fileID: 3633409688177888990}
+  - component: {fileID: 838599567}
+  m_Layer: 0
+  m_Name: LevelGen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4978644679145271675
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4978644679145271672}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3633409688177888990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4978644679145271672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 822d9df49c080667180ed73eb7035ee3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  robotPrefab: {fileID: 9030991417816521346, guid: 80da0948fbe11f1a3bd758094fdb8c39, type: 3}
+  enemyDetectorPrefab: {fileID: 5954899954133755280, guid: 178bde96cef00306fbf2f468cbabb6b5, type: 3}
+  gridSectionPrefab: {fileID: 850605709843261278, guid: f27a001e7846809108d3b14a783a5219, type: 3}
+  obstaclePrefabs:
+  - {fileID: 1000010869019282, guid: d7ba4fe833670a140b9b6085652f0e26, type: 3}
+  - {fileID: 1000011949594382, guid: 75fa8bf3a73ee6b4da0c7a2c6d3db6a1, type: 3}
+  - {fileID: 1000011696945378, guid: f94554303b4f7094ea5e12fe79985529, type: 3}
+  numberOfDetectors: 20
+  placementThreshold: 0.3
+  chanceOfPlacementGivenValid: 0.9
+  minDistanceBetweenObstacles: 3
+  maxOffsetFromPosition: 1
+  mapGridSizeX: 5
+  mapGridSizeZ: 5
+  mapSeed: 0
+  useRandomSeed: 1
+  noiseGenerationMap: {fileID: 838599567}
+  noiseWaves:
+  - seed: 23576
+    frequency: 1
+    amplitude: 1
+  - seed: 3247
+    frequency: 2
+    amplitude: 0.5
+  - seed: 777
+    frequency: 4
+    amplitude: 0.25
+  mapSize: 30
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  safeRadius: 6
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  goalPrefab: {fileID: 291002506702760102, guid: c7b33dcfb5c3dfddf8fbd62c4211931e, type: 3}
+--- !u!114 &838599567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4978644679145271672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41fb98306b36ebf18b54b451fcbbe4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
