@@ -2,11 +2,6 @@
 
 Unity Version 2021.3.6f1
 
-## Helpful Papers
-
-[A LiDAR Point Cloud Generator: from a Virtual World to
-Autonomous Driving](https://par.nsf.gov/servlets/purl/10109208)
-
 ## ROS Format for LiDAR
 
 You can find some info about the format for the LiDAR senson here. It assumes a planar setup for now
@@ -96,4 +91,4 @@ In contrast, if the data is coming because of a pull event, you will receive thi
 }
 ```
 
-For many purposes this may not matter, but I thought the extra info could be useful, since the server already knows it anyways.# Stealth Centric Autonomous Robot System
+For many purposes this may not matter, but I thought the extra info could be useful, since the server already knows it anyways.
